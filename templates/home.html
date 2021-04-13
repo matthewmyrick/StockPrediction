@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block body %}
+    <div class="input-group input-group-lg w-100" style="padding-top: 5%; float: center">
+      <form method="post">
+          <div class="form-group">
+            <label for="symbolID">Input Symbol</label>
+            <input class="form-control" id="symbolID" placeholder="<Input Symbol>" name="symbol">
+          </div>
+          <button type="submit" class="btn btn-primary" id="btnFetch" onclick="spinner()">
+              Submit
+          </button>
+        </form>
+    </div>
+    <div class="loader">
+      <div class="loading">
+      </div>
+    </div>
+{% endblock %}
